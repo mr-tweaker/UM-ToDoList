@@ -2,6 +2,8 @@
 
 A feature-rich, interactive Todo List web application with task prioritization, filtering, and data persistence capabilities.
 
+🌐 [Live Demo](https://mr-tweaker.github.io/UM-ToDoList/)
+
 ## Features
 
 - ✨ Create, edit, and delete tasks
