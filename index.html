@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive To-Do List</title>
+</head>
+<body>
+    <h1>My To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <select id="prioritySelect">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+    </select>
+    <button id="addTask">Add Task</button>
+    
+    <div id="filterContainer">
+        <input type="text" id="searchInput" placeholder="Search tasks">
+        <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="completed">Completed</option>
+        </select>
+    </div>
+    
+    <div id="statisticsContainer">
+        <h2>Task Statistics</h2>
+        <p>Total Tasks: <span id="totalTasks">0</span></p>
+        <p>Completed Tasks: <span id="completedTasks">0</span></p>
+        <p>Completion Rate: <span id="completionRate">0%</span></p>
+    </div>
+
+    <div id="exportImportContainer">
+        <button id="exportButton">Export Tasks</button>
+        <input type="file" id="importInput" accept=".json">
+        <button id="importButton">Import Tasks</button>
+    </div>
+    
+    <ul id="taskList"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
